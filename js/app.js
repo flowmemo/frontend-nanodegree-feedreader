@@ -94,6 +94,7 @@ google.setOnLoadCallback(init);
  * until the DOM is ready.
  */
 $(function() {
+    console.log(document.readyState);
     var container = $('.feed'),
         feedList = $('.feed-list'),
         feedItemTemplate = Handlebars.compile($('.tpl-feed-list-item').html()),
